@@ -1,0 +1,23 @@
+.arbeit {
+    color: chocolate;
+}
+
+.hobby {
+    color: blue;
+}
+
+.liebe {
+    color: deeppink;
+}
+
+.nacht {
+    background-color: darkgray;
+}
+
+p.arbeit {
+    background-color: aqua;
+}
+
+p.arbeit#lorem {
+    background-color: darkmagenta;
+}

@@ -1,0 +1,24 @@
+h1 {
+    color: orange;
+}
+
+.quellenangabe {
+    color: gray;
+}
+
+#jaeger {
+    color:green;
+}
+
+#seemann {
+    color: blue;
+}
+
+#schornsteinfeger {
+    color: black;
+}
+
+/* alle spans mit Klasse beruf */
+span.beruf {
+    background-color: lightgreen;
+}
