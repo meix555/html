@@ -1,0 +1,10 @@
+body {
+    background-image: url(images/gradient_horizontal.png);
+    background-position: right top;
+    background-repeat: repeat-y;
+    background-color: #001eff;
+}
+
+p {
+    color: white;
+}

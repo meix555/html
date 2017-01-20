@@ -2,6 +2,6 @@
     color: chartreuse;
 }
 
-:hover {
+a:hover {
     color: yellow;
 }
