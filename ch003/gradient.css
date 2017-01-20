@@ -1,0 +1,5 @@
+.farbverlauf {
+    background-image: url(images/gradient_horizontal.png);
+    background-repeat: repeat-y;
+    background-color: #8f9cff;
+}
