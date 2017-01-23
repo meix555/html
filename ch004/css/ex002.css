@@ -1,0 +1,7 @@
+.da_boss {
+    font-size: 1.5em;
+}
+
+h1 .da_boss, h2 .da_boss, h3 .da_boss {
+    font-style: italic;
+}
