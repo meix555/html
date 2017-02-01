@@ -1,0 +1,12 @@
+h1 {
+    color: #001eff;
+}
+
+.listyle {
+    color: cadetblue;
+    list-style-image: url(../images/smiley.png);
+}
+
+#cssrot {
+    color: red;
+}
