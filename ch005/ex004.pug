@@ -1,0 +1,23 @@
+doctype
+html
+    head
+        title Aufgabe 1
+        style(type="text/css").
+            .alpha {
+                list-style-type: lower-alpha;
+            }
+            .circle {
+                list-style-type: circle;
+            }
+    body
+        h1 Verschachtelte Listen
+
+        ol
+            li Item 1
+                ol
+                    li.alpha Item 1.1
+                    li.alpha Item 1.2
+                        ul
+                            li.circle Item 1.2.1
+
+            li Item 2
