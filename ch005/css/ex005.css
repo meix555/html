@@ -1,0 +1,32 @@
+.num {
+    text-align: right;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead tr {
+    border-bottom: 2px solid black;
+}
+
+caption   {
+    background-color: aquamarine;
+    caption-side: top;
+}
+
+td {
+    border: 1px solid #AAAAAA;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}

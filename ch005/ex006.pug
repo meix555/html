@@ -1,0 +1,49 @@
+doctype
+html
+    head
+        title Tabelle mit allem
+        style.
+            .mittig {
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            caption {
+                border: 2px solid #001eff;
+            }
+            td {
+                border: 2px solid #001eff;
+            }
+            thead tr {
+                border: 2px solid #001eff;
+            }
+    body
+        h1 Tabelle mit allem
+
+        table
+            caption Schwarzenegger-Filme
+            colgroup
+                col.graybackground
+                col.graybackground
+                col.graybackground
+
+            thead
+                tr
+                    th Titel
+                    th Genre
+                    th Jahr
+
+            tfoot
+                tr
+                    td.mittig(colspan=3) Das war alles
+
+            tbody
+                tr
+                    td Herkules in New York
+                    td Fantasy
+                    td 1969
+                tr
+                    td Total Recall
+                    td Science Fiction
+                    td 1999
