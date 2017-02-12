@@ -1,0 +1,44 @@
+doctype
+html
+    head
+        title Aufgabe Suche
+        link(href="css/suche.css" rel="stylesheet")
+    body
+        form(action="forms/stapelsuche.php" method="get" accept-charset="utf-8")
+            div
+                label(for="freitextfeld") Suchwort:&nbsp;&nbsp;
+                input#freitextfeld(type="text" name="freitext")
+
+            div
+                input#outofstock_cb(type="checkbox" name="outofstock")
+                label(for="outofstock_cb") Artikel anzeigen, die nicht am Lager sind
+
+            fieldset.fieldsetwidth
+                legend Kategorie
+                div
+                    input#kistenradio(type="radio" name="kategorie" value="kisten")
+                    label(for="kistenradio") Kisten
+                div
+                    input#flaschenradio(type="radio" name="kategorie" value="flaschen")
+                    label(for="flaschenradio") Flaschen
+                div
+                    input#sonstigeradio(type="radio" name="kategorie" value="sonstige")
+                    label(for="sonstigeradio") Sonstige
+                div
+                    input#alleradio(type="radio" name="kategorie" value="alle")
+                    label(for="alleradio") Alle
+
+                div
+                    input#tabelleformat(type="hidden" name="format" value="tabelle")
+
+            div
+                label(for="kommentare") Kommentar:&nbsp;&nbsp;
+                textarea#kommentare(name="kommentare" maxlength="1024" cols="20" rows="7")
+                    |Vordefinierter
+                    |Text
+
+
+            div
+                button(type="submit") Suchen
+
+

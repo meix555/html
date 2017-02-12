@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aufgabe Suche</title>
+    <link href="css/suche.css" rel="stylesheet">
+</head>
+<body>
+<form action="forms/stapelsuche.php" method="get" accept-charset="utf-8">
+    <div><label for="freitextfeld">Suchwort:&nbsp;&nbsp;</label><input id="freitextfeld" type="text" name="freitext">
+    </div>
+    <div><input id="outofstock_cb" type="checkbox" name="outofstock"><label for="outofstock_cb">Artikel anzeigen, die
+        nicht am Lager sind</label></div>
+    <fieldset class="fieldsetwidth">
+        <legend>Kategorie</legend>
+        <div><input id="kistenradio" type="radio" name="kategorie" value="kisten"><label
+                for="kistenradio">Kisten</label></div>
+        <div><input id="flaschenradio" type="radio" name="kategorie" value="flaschen"><label for="flaschenradio">Flaschen</label>
+        </div>
+        <div><input id="sonstigeradio" type="radio" name="kategorie" value="sonstige"><label for="sonstigeradio">Sonstige</label>
+        </div>
+        <div><input id="alleradio" type="radio" name="kategorie" value="alle"><label for="alleradio">Alle</label></div>
+        <div><input id="tabelleformat" type="hidden" name="format" value="tabelle"></div>
+    </fieldset>
+    <div>
+        <label for="kommentare">Kommentar:&nbsp;&nbsp;</label>
+        <textarea id="kommentare" name="kommentare" maxlength="1024" cols="20" rows="7">Vordefinierter Text</textarea>
+    </div>
+    <div>
+        <button type="submit">Suchen</button>
+    </div>
+</form>
+</body>
+</html>

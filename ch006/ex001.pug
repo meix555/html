@@ -1,0 +1,47 @@
+doctype
+html
+    head
+        title Erstes Formular
+        meta(charset="utf-8")
+    body
+        form(action="forms/hallowelt.php" method="get" accept-charset="utf-8")
+            div
+                label(for="namefeld") Name:
+                input#namefeld(type="text" name="name" placeholder="Hier dein Vorname" value="Willibald" maxlength="15")
+            div
+                label(for="nachnamefeld") Nachname:
+                input#nachnamefeld(type="text" name="nachname" placeholder="Hier dein Nachname" value="Wacker")
+            div
+                label(for="spitznamefeld") Spitzname:
+                input#spitznamefeld(type="text" name="spitzname" placeholder="Hier dein Spitzname" value="Willi")
+            div
+                label(for="passwordfield") Kennwort:
+                input#passwordfield(type="password" placeholder="Hier Password eingeben")
+            div
+                label(for="geschlecht_m") Mann:
+                input#geschlecht_m(type="radio" name="geschlecht" value="M" checked="checked")
+                label(for="geschlecht_w") Frau:
+                input#geschlecht_w(type="radio" name="geschlecht" value="W")
+            div
+                label(for="extraschleim_cb") Extraschleim:
+                input#extraschleim_cb(type="checkbox" name="extraschleim" value="an")
+            div
+                select(name="zusatz[]" multiple size="5")
+                    optgroup(label="The Good")
+                        option(value="intelligent") intelligent
+                        option(value="gutaussehend" selected="selected") gutaussehend
+                    optgroup(label="The Bad")
+                        option(value="nach Käse riechend") nach Käse riechend
+                        option(value="langweilig") langweilig
+                    optgroup(label="The Creepy")
+                        option(value="wohlgeformt") wohlgeformt
+                        option(value="schmackhaft") schmackhaft
+            div
+                input(type="text" list="adjektive" name="zusatz002")
+                datalist#adjektive
+                    option(value="intelligent")
+                    option(value="gutaussehend")
+
+
+            div
+                button(type="submit") Sag mal hallo!
