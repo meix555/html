@@ -1,0 +1,11 @@
+input:focus {
+    border-color: blue;
+}
+
+label[for=nachnamefeld] {
+    color: red;
+}
+
+input[required] {
+    background-color: coral;
+}

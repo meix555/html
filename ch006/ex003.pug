@@ -1,0 +1,22 @@
+doctype
+html
+    head
+        title Simple input
+        meta(charset="utf-8")
+        link(href="css/ex003.css" rel="stylesheet")
+
+    body
+        form(action="something.php" method="get" accept-charset="utf-8")
+            div
+                label(for="namefeld") Name:
+                input#namefeld(type="text" name="name" required)
+
+            div
+                label(for="nachnamefeld") Nachname:
+                input#nachnamefeld(type="text" name="nachname")
+            div
+                label(for="adressefeld") Adresse:
+                input#adressefeld(type="text" name="adresse")
+            div
+                button(type="submit" value="Abschicken") Abschicken
+
