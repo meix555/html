@@ -1,0 +1,36 @@
+#eins {
+    background-color: #ffa500;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#zwei {
+    background-color: #8f9cff;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#drei {
+    background-color: aquamarine;
+    height: 70px;
+    width: 200px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#vier {
+    background-color: green;
+    height: 10%;
+    width: 50%;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#fuenf {
+    background-color: yellow;
+    height: 10em;
+    width: 50em;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
