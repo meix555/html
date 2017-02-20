@@ -8,7 +8,9 @@
     background-color: #8f9cff;
     height: 50px;
     overflow: hidden;
-    margin-bottom: 5px;
+    padding: 5px;
+    border: 3px solid #000;
+    margin: 5px 10px 20px 7px;
 }
 
 #drei {
@@ -16,7 +18,9 @@
     height: 70px;
     width: 200px;
     overflow: hidden;
-    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 2px dotted #aaa;
+    margin: 20px auto;
 }
 
 #vier {
