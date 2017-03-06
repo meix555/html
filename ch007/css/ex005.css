@@ -1,0 +1,23 @@
+.pull {
+    float:left;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-variant: small-caps;
+    padding: 5px;
+    width: 250px;
+}
+
+#absatz2 {
+    clear: left;
+}
+
+#absatz4 {
+    width: 250px;
+    top: 330px;
+    left: 50px;
+    height: 60px;
+    position: absolute;
+    padding: 10px 20px 40px;
+    margin: 20px;
+    border: 10px solid #000;
+}

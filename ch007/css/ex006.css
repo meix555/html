@@ -1,0 +1,22 @@
+#absatzlinks {
+    margin-left: 10px;
+    background-color: #8f9cff;
+    height: 100%;
+    position: absolute;
+    right: 66%;
+}
+
+#absatzrechts {
+    width: 70%;
+    margin-right: 10px;
+    background-color: aquamarine;
+    height: 100%;
+    left: 33%;
+    position: absolute;
+    top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
