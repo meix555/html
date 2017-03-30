@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Einkaufsliste</title>
+</head>
+<body>
+
+<h1>Einkaufsliste</h1>
+
+<div>
+    <label for="was-ich-kaufen-muss">Das will ich kaufen: </label>
+    <input id="was-ich-kaufen-muss" type="text" placeholder="Bitte geben Sie was ein."/>
+</div>
+<div>
+    <button type="button" onclick="uebernehmen()" >Übernehmen</button>
+</div>
+
+
+<div style="margin-top: 20px;">
+    <label for="einkaufsliste">Meine Einkaufsliste:</label>
+    <ul id="einkaufsliste">
+    </ul>
+</div>
+
+<script>
+    function uebernehmen() {
+        var wasIchKaufenMuss = document.getElementById("was-ich-kaufen-muss");
+        var mussichkaufen = wasIchKaufenMuss.value;
+        var ulelement = document.getElementById("einkaufsliste");
+        ulelement.innerHTML = ulelement.innerHTML + "<li>" + mussichkaufen + "</li>";
+        wasIchKaufenMuss.value = "";
+    }
+</script>
+
+</body>
+</html>

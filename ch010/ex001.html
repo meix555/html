@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript...</title>
+</head>
+<body>
+    <script>
+        var RPS_DATA = [
+            [ 1, 2, 0 ],
+            [ 0, 1, 2 ],
+            [ 2, 0, 1 ]
+        ];
+
+        var RPS_DICT = {
+            "scissors" :  0,
+            "paper" : 1,
+            "rock" : 2
+        };
+
+        var RESULT_DATA = [ "Player 2 won!", "Draw!", "Player 1 won!" ];
+
+        function rps(p1, p2) {
+            var result;
+            var p1_index = RPS_DICT[p1];
+            var p2_index = RPS_DICT[p2];
+            var result_index = RPS_DATA[p1_index][p2_index];
+            result = RESULT_DATA[result_index];
+
+            return result;
+        }
+    </script>
+
+    <div>
+        Player 1: scissors, Player 2: rock. Ergebnis: <script>document.write(rps("scissors", "rock"))</script> :-)
+    </div>
+    <div>
+        Player 1: rock, Player 2: scissors. Ergebnis: <script>document.write(rps("rock", "scissors"))</script> :-)
+    </div>
+
+    <noscript>JavaScript ist abgeschaltet!</noscript>
+</body>
+</html>
