@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+
+    <style>
+        .fixedlengthlabel {
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+
+<script>
+
+    function schuhFunktion() {
+        var anzahlSchuhe = zaehleSchuhe();
+
+        schreibeBloedenKommentar(anzahlSchuhe);
+
+    }
+
+    function schreibeBloedenKommentar(anzahlSchuhe) {
+
+        var kommentar = "";
+
+        if (anzahlSchuhe < 10) {
+            kommentar = "Das sind wenige Schuhe.";
+        } else if (anzahlSchuhe < 100) {
+            kommentar = "Das sind viele Schuhe.";
+        } else if (anzahlSchuhe < 1000) {
+            kommentar = "Das sind sehr viele Schuhe.";
+        } else if (anzahlSchuhe < 10000) {
+            kommentar = "Das sind zu viele Schuhe.";
+        }else if (anzahlSchuhe >=    10000) {
+            kommentar = "Oh mein Gott!!!";
+        }
+
+        document.getElementById("bloederKommentar").innerHTML = kommentar;
+    }
+
+    function zaehleSchuhe() {
+
+        var TAGE_IM_JAHR = 365;
+        var regalboeden = parseInt(document.getElementById("regalBoeden").value);
+        var paareJeBoden = parseInt(document.getElementById("paareJeBoden").value);
+        var paareNebenDemRegal = parseInt(document.getElementById("paareNebenRegal").value  );
+        var paare = regalboeden * paareJeBoden + paareNebenDemRegal;
+        var anzahlSchuhe = paare * 2;
+        document.getElementById("ausgabe").innerHTML = anzahlSchuhe.toString();
+
+        return anzahlSchuhe;
+    }
+</script>
+
+<div>
+    <label class="fixedlengthlabel" for="regalBoeden">Regalböden: </label>
+    <input id="regalBoeden" type="text"/>
+</div>
+<div>
+    <label class="fixedlengthlabel" for="paareJeBoden">Paare je Boden: </label>
+    <input id="paareJeBoden" type="text"/>
+</div>
+<div>
+    <label class="fixedlengthlabel" for="paareNebenRegal">Paare neben Regal: </label>
+    <input id="paareNebenRegal" type="text"/>
+</div>
+<button type="button" onclick="schuhFunktion()">Klick mich!</button>
+
+<div>
+    Schrödingers Freundin hat <span id="ausgabe">???</span> Schuhe.
+</div>
+
+<div id="bloederKommentar"></div>
+
+</body>
+</html>
